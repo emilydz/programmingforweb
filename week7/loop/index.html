@@ -1,0 +1,36 @@
+<html>
+  <head>
+    <title>Loops</title>
+  </head>
+  <body>
+    <div id="app">
+      <table>
+        <thead>
+          <th>complete</th>
+          <th>tasks</th>
+        <tbody>
+          <tr v-for="task in todos"></tr>
+            <td>{{task.copmled}}</td>
+            <td>{{task.title}}</td>
+        </tbody>
+      </table>
+
+      <div v-for="(prop, key) in myDog">
+        {{key}}: {{prop}}
+      </div>
+
+      <div
+      class="animal-container"
+      v-for="(critter, index) in animals">
+        <div><h2>{{index}}</h2></div>
+        <div>{{critter.name}}</div>
+        <div>{{critter.color}}</div>
+      </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/p5"></script>
+    <script src="loop.js"></script>
+  </body>
+</html>
