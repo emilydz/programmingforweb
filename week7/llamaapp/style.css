@@ -1,0 +1,62 @@
+[v-cloak] {
+  display: none;
+}
+
+body {
+  padding: 6rem;
+}
+
+.title {
+  font-family: sans-serif;
+  color: red;
+  text-align: center;
+  font-size: 4rem;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.subtitle {
+  font-family: sans-serif;
+  font-weight: 5rem;
+  text-align: right;
+  padding: 0 13rem;
+}
+
+p {
+  font-family: sans-serif;
+  padding: 0 10rem;
+}
+
+a {
+  font-family: sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 3rem;
+}
+
+img {
+  width: 350px;
+  height: 200px;
+}
+
+.content {
+  display: flex;
+  justify-content: space-around;
+}
+
+.wrapper .text {
+  visibility:hidden;
+  text-align: center;
+}
+
+.wrapper:hover .text {
+  visibility:visible;
+}
+
+.llamaStyle {
+  border: 1px solid black;
+}
+
+.alpacaStyle {
+  border: 1px solid black;
+}

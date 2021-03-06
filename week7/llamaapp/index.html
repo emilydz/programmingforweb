@@ -1,0 +1,60 @@
+<html>
+  <head>
+    <title>Llama or Alpaca?</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+      <div id="myApp" v-cloak>
+        <p class="title">Llama or Alpaca?</p>
+        <p class="subtitle"><i>Your guess is as good as mine!</i></p>
+        <p>It's the age-old question--llama or alpaca? Refresh your knowledge and see if you can guess!</p>
+
+        <div class="content">
+          <a v-bind:style="llamaStyle" v-bind:href="llamaLink">Llamas</a>
+          <a v-bind:style="alpacaStyle" v-bind:href="alpacaLink">Alpacas</a>
+        </div>
+
+        <div class="content">
+          <div class="wrapper">
+            <img v-bind:class="{llamaStyle: currentRoute==='yes'}" src="imgs/llama1.jpeg">
+            <p class="text">Llama</p>
+          </div>
+
+          <div class="wrapper">
+            <img v-bind:class="{alpacaStyle: currentRoute==='yes'}" src="imgs/alpaca1.jpeg">
+            <p class="text">Alpaca</p>
+          </div>
+        </div>
+
+        <div class="content">
+          <div class="wrapper">
+            <img v-bind:class="{alpacaStyle: currentRoute==='yes'}" src="imgs/alpaca2.jpeg">
+            <p class="text">Alpaca</p>
+          </div>
+
+          <div class="wrapper">
+            <img v-bind:class="{llamaStyle: currentRoute==='yes'}" src="imgs/llama2.jpeg">
+            <p class="text">Llama</p>
+          </div>
+        </div>
+
+        <div class="content">
+          <div class="wrapper">
+            <img v-bind:class="{alpacaStyle: currentRoute==='yes'}" src="imgs/alpaca3.jpeg">
+            <p class="text">Alpaca</p>
+          </div>
+
+          <div class="wrapper">
+            <img v-bind:class="{llamaStyle: currentRoute==='yes'}" src="imgs/llama3.jpeg">
+            <p class="text">Llama</p>
+          </div>
+        </div>
+
+
+      </div>
+
+      <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/p5"></script>
+      <script src="script.js"></script>
+ </body>
+</html>
