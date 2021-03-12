@@ -1,0 +1,84 @@
+<html>
+  <head>
+    <title>Forms</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div id="form" v-cloak>
+      <h1>A form about you and your alpaca</h1>
+      <form>
+        <!--first name-->
+        <div class="formGroup">
+          <label for="first-name">
+            First name:
+          </label>
+          <input id="first-name" type="text" v-model="firstName"/>
+        </div>
+        <!--last name-->
+        <div class="formGroup">
+          <label for="last-name">
+            Last name:
+          </label>
+          <input id="last-name" type="text" v-model="lastName"/>
+        </div>
+        <!--state/province-->
+        <div class="formGroup">
+          <label for="state">
+            State/province:
+          </label>
+          <input id="state" type="text" v-model="state"/>
+        </div>
+        <!--country-->
+        <div class="formGroup">
+          <label for="country">
+            Country:
+          </label>
+          <input id="country" type="text" maxlength="3" v-model="country"/>
+        </div>
+        <!--alpaca colors-->
+        <div class="formGroup">
+          <label for="color">
+            Favorite Alpaca color:
+          </label>
+          <div>
+            <label for="color">Green</label>
+              <input type="checkbox" name="color" value="green" v-model="color">
+          </div>
+          <div>
+            <label for="color">Red</label>
+              <input type="checkbox" name="color" value="red" v-model="color">
+          </div>
+          <div>
+            <label for="color">Brown</label>
+              <input type="checkbox" name="color" value="brown" v-model="color">
+          </div>
+        </div>
+        <!--current status-->
+        <div class="formGroup">
+          <label for="color">
+            What's your current alpaca status:
+          </label>
+          <textarea name="" id="status"
+          cols="30" rows="10" v-model="status"></textarea>
+        </div>
+      </form>
+
+    <div>
+      <!---output-->
+      <p class="output">output</p>
+        <p class="output__item">First name: {{firstName}}</p>
+        <p class="output__item">Last name: {{lastName}}</p>
+        <p class="output__item">State/province: {{state}}</p>
+        <p class="output__item">Country:
+           {{country}}</p>
+        <p class="output__item">color:
+          {{color}}</p>
+        <p class="output__item">Status:
+          {{status}}</p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/p5"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
