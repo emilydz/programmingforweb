@@ -1,0 +1,67 @@
+<html>
+  <head>
+    <title>Collection</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div id="app">
+      <!-- begin table -->
+      <div class="list__content">
+        <p class="list__title">A Collection of Plants</p>
+        <!-- list head -->
+          <div class="list__head">
+            <p class="list__item">Name</p>
+            <p class="list__item">Scientific name</p>
+            <p class="list__item">Light</p>
+            <p class="list__item">Lifespan</p>
+            <p class="list__item">Image</p>
+          </div>
+          <!-- list data -->
+          <div v-for="objects in plants" v-cloak>
+            <my-com
+              v-bind:name="objects.name"
+              v-bind:sciname="objects.sciname"
+              v-bind:light="objects.light"
+              v-bind:life="objects.life"
+              v-bind:image="objects.image"></my-com>
+          </div>
+      </div>
+
+      <form v-on:submit.prevent="submitHandler">
+        <legend class="new-plant-form__title">Add a console to the collection</legend>
+        <div class="new-plant-form">
+          <div class="form__item">
+            <label for="name">Name</label>
+            <input id="name" type="text"
+            v-model="newPlantObj.name">
+          </div>
+          <div class="form__item">
+            <label for="sciname">Scientific Name</label>
+            <input id="sciname" type="text"
+            v-model="newPlantObj.sciname">
+          </div>
+          <div class="form__item">
+            <label for="light">Light</label>
+            <input id="light" type="text"
+            v-model="newPlantObj.light">
+          </div>
+          <div class="form__item">
+            <label for="life">Lifespan</label>
+            <input id="life" type="text"
+            v-model="newPlantObj.life">
+          </div>
+          <div class="form__item">
+            <label for="image">Image</label>
+            <input id="image" type="text"
+            v-model="newPlantObj.image">
+          </div>
+          <button type="submit">Submit</button>
+      </form>
+    </div>
+
+    <!-- scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/p5"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
