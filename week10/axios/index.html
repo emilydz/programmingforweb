@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Fetching with Axios</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js
+        "></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.11/vue.min.js
+        "></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>Music app</h1>
+        <div id="musicApp" class="track-wrapper">
+            <streaming-track v-bind:track="song" v-for="song in tracks">
+            </streaming-track>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
