@@ -1,0 +1,47 @@
+html {
+    margin: 3rem;
+    font-family: sans-serif;
+}
+
+.title {
+    font-size: 2rem;
+    text-align: right;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.paper {
+    padding-bottom: 4rem;
+}
+
+.paper-box {
+ display: flex;
+ justify-content: space-between;
+ border-bottom: 1px solid black;
+}
+
+.paper-box__item-title {
+    padding-right: 2rem;
+    font-size: 2rem;
+}
+
+.paper-box__item-sub {
+    padding-left: 2rem;
+    padding-top: 2rem;
+    text-align: right;
+}
+
+.paper-box__item-sub a {
+    text-decoration: none;
+    color: black;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.paper-box__item-sub a:hover {
+    color: blue;
+}
+
+.body {
+    line-height: 2rem;
+}

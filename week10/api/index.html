@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Connecting to External APIs</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.11/vue.min.js"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+    <div id="myApp">
+            <h1 class="title">Research in the CORE database</h1>
+            <research-app v-for="work in papers" v-bind:paper="work"></research-app>
+    </div>
+        <script src="script.js"></script>
+    </body>
+</html>
