@@ -1,0 +1,28 @@
+body {
+  margin: 3rem;
+  font-family: sans-serif;
+  letter-spacing: 2px;
+}
+
+h1 {
+  letter-spacing: 7px;
+  font-size: 4rem;
+  text-transform: uppercase;
+}
+
+p {
+  padding: 1rem 0;
+}
+
+a {
+  letter-spacing: 2px;
+  text-decoration: none;
+  color: black;
+  padding: 6rem 1rem;
+  text-transform: uppercase;
+}
+
+a:hover {
+  font-size: 2rem;
+  color: lightblue;
+}
