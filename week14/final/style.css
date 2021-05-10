@@ -1,0 +1,33 @@
+html {
+  margin: 2rem;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.content-right {
+  font-family: sans-serif;
+  font-size: 1rem;
+  padding: 1rem;
+  width: 40%;
+}
+
+.content-left {
+  font-family: sans-serif;
+  font-size: 1rem;
+  padding: 1rem;
+  width: 40%;
+}
+
+.title {
+  font-family: sans-serif;
+  font-size: 2rem;
+  border-bottom: 1px solid black;
+  padding: 1rem;
+}
+
+.text-step {
+  font-size: .7rem;
+}
